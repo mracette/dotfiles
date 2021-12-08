@@ -53,7 +53,17 @@
 [core]
 
 	# Use VSCode as default editor
-	editor = code
+	editor = code -n -w
 
 	# Use custom `.gitignore` and `.gitattributes`.
 	excludesfile = ~/.gitignore
+
+[init]
+	# Use 'main' as default branch for new repositories
+	defaultBranch = main
+
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
