@@ -1,5 +1,15 @@
 #!/usr/bin/env bash
 
+# Find the process listening on a specific port
+function process_on_port() {
+	port=$1
+	if [[ "$port" != :* ]]
+	then
+	  port=:$port
+	fi
+	lsof -i $port
+}
+
 # Create a new directory and enter it
 function mkd() {
 	mkdir -p "$@" && cd "$_";
@@ -17,4 +27,13 @@ function fs() {
 	else
 		du $arg .[^.]* ./*;
 	fi;
+}
+
+# Converts one or more .wav files in a specified folder to mp3
+function wav_to_mp3() {
+	for file in $1/*; do
+	    filename=$(basename $file)
+	    echo "$filename"
+	    lame -V1 -q0 $1$filename  $2${filename%.*}.mp3
+	done
 }
