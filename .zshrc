@@ -19,3 +19,6 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Enable aws-cli autoprompt (https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-parameters-prompting.html)
+aws_cli_auto_prompt=on

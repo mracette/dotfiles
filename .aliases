@@ -52,3 +52,16 @@ alias reload="exec ${SHELL} -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+# Run Chrome in debug mode
+alias chrome-debugger="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222"
+
+# Always use python3
+alias python="python3"
+alias pip="pip3"
+
+# AWS
+alias ecr-login="aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 785352290980.dkr.ecr.us-east-2.amazonaws.com"
+
+# Vault backup
+alias vault-backup="git add . && git commit -m 'vault backup $(date)' && git push"
