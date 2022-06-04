@@ -18,3 +18,6 @@ export NVM_DIR="$HOME/.nvm"
 export LDFLAGS="-L/opt/homebrew/opt/openssl@1.1/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/openssl@1.1/include"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@1.1/lib/pkgconfig"
+
+# set java version (see available versions: /usr/libexec/java_home -V)
+export JAVA_HOME=`/usr/libexec/java_home -v 15.0.2`
