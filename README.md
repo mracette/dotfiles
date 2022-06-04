@@ -11,6 +11,7 @@ Sources / Inspiration:
 1. Install apps using `brew`:
    1. `google-chrome`
    1. `1password`
-1. Setup dev folder `mkdir ~/dev && cd $_`
+1. Setup dev folder: `mkdir ~/dev && cd $_`
+1. Clone this repo: `git clone 
 1. Other programs:
    1. Magnet
