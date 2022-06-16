@@ -22,3 +22,6 @@ source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 # Enable aws-cli autoprompt (https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-parameters-prompting.html)
 aws_cli_auto_prompt=on
+
+# Enable kubctl autocomplete
+source <(kubectl completion zsh)

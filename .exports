@@ -21,3 +21,8 @@ export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@1.1/lib/pkgconfig"
 
 # set java version (see available versions: /usr/libexec/java_home -V)
 export JAVA_HOME=`/usr/libexec/java_home -v 15.0.2`
+
+# OS specific
+export remote_username="markracette"
+export remote_host="meerkat"
+export remote_path_to_repo="~/dev/openspace"
