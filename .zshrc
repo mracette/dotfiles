@@ -8,9 +8,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# This loads nvm
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-
 plugins=(git zsh-autosuggestions)
 
 # oh-my-zsh
@@ -25,3 +22,7 @@ aws_cli_auto_prompt=on
 
 # Enable kubctl autocomplete
 source <(kubectl completion zsh)
+
+# This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+nvm use 2>/dev/null
